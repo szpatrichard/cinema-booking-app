@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #34495e;
+	color: #fff;
+	font-size: 16px;
+	font-family: "Ubuntu", Arial, sans-serif;
+}
+
+.container {
+	height: 100vh;
+	display: grid;
+	grid-template-rows: auto repeat(5, 116px) auto;
+	justify-content: center;
+	grid-template-areas:
+		"."
+		"details"
+		"cinema"
+		"cinema"
+		"cinema"
+		"reset"
+		".";
+}
+
+.movie-details-container {
+	grid-area: details;
+	align-self: end;
+}
+
+.select-container {
+	text-align: center;
+}
+
+.select-container select {
+	width: 210px;
+	height: 30px;
+	background: #fff;
+	color: #34495e;
+	font-size: 16px;
+	border: none;
+	border-radius: 5px;
+	margin-left: 4px;
+	appearance: none;
+	-webkit-appearance: none;
+	text-align-last: center;
+}
+
+.select-container select:focus {
+	outline: none;
+}
+
+.legend-container {
+	height: 40px;
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: rgba(0, 0, 0, 0.1);
+	margin-top: 40px;
+	border-radius: 8px;
+	padding: 0 20px;
+}
+
+.legend-container li {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.legend-container li span {
+	margin: 4px;
+}
+
+.cinema-container {
+	grid-area: cinema;
+}
+
+.canvas {
+	width: 280px;
+	height: 110px;
+	background: #a2a0a1;
+	margin: 20px auto;
+	transform: perspective(800px) rotateX(-35deg);
+	box-shadow: 0 3px 10px rgba(214, 212, 212, 0.7);
+}
+
+.seats {
+	display: grid;
+	justify-content: center;
+	grid-template-columns:
+		repeat(2, 30px) 50px repeat(3, 30px) 50px
+		30px;
+	margin-top: 10px;
+}
+
+.available-seat {
+	background: #35ac49;
+	width: 20px;
+	height: 20px;
+	margin: 5px;
+	justify-self: end;
+}
+
+.available-seat.selected {
+	background: #f58220;
+}
+
+.available-seat.occupied {
+	background: #737374;
+}
+
+.seats .available-seat:hover {
+	cursor: pointer;
+	transform: scale(1.2);
+}
+
+.seats .available-seat.occupied:hover {
+	cursor: default;
+	transform: scale(1);
+}
+
+.price-reset-container {
+	grid-area: reset;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.price-reset-container div {
+	margin-top: 20px;
+}
+
+.price-reset-container span {
+	color: #6feaf6;
+}
+
+.price-reset-container .reset {
+	font-family: "Ubuntu", Arial, sans-serif;
+	font-size: 1rem;
+	width: 70px;
+	height: 30px;
+	background: #fff;
+	color: #34495e;
+	border: none;
+	border-radius: 5px;
+	margin: 25px auto 0;
+}
+
+.price-reset-container .reset:hover {
+	cursor: pointer;
+	transform: scale(1.2);
+}
+
+.price-reset-container .reset:focus {
+	outline: none;
+}

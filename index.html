@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Cinema App</title>
+		<link rel="stylesheet" href="./style.css" />
+		<script src="./app.js" defer></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="movie-details-container">
+				<div class="select-container">
+					<label for="movies">Pick a movie:</label>
+					<select id="movies">
+						<option value="1">Joker</option>
+						<option value="2">Parasite</option>
+						<option value="3">Tenet</option>
+						<option value="4">Tom & Jerry</option>
+					</select>
+				</div>
+				<ul class="legend-container">
+					<li>
+						<div class="available-seat"></div>
+						<span>Available</span>
+					</li>
+					<li>
+						<div class="available-seat selected"></div>
+						<span>Selected</span>
+					</li>
+					<li>
+						<div class="available-seat occupied"></div>
+						<span>Occupied</span>
+					</li>
+				</ul>
+			</div>
+			<div class="cinema-container">
+				<div class="canvas"></div>
+				<div class="seats">
+					<div class="available-seat"></div>
+					<div class="available-seat"></div>
+					<div class="available-seat"></div>
+					<div class="available-seat"></div>
+					<div class="available-seat"></div>
+					<div class="available-seat"></div>
+					<div class="available-seat"></div>
+					<div class="available-seat"></div>
+					<div class="available-seat"></div>
+					<div class="available-seat"></div>
+					<div class="available-seat"></div>
+					<div class="available-seat selected"></div>
+					<div class="available-seat selected"></div>
+					<div class="available-seat"></div>
+					<div class="available-seat"></div>
+					<div class="available-seat"></div>
+					<div class="available-seat"></div>
+					<div class="available-seat"></div>
+					<div class="available-seat"></div>
+					<div class="available-seat"></div>
+					<div class="available-seat"></div>
+					<div class="available-seat"></div>
+					<div class="available-seat occupied"></div>
+					<div class="available-seat"></div>
+					<div class="available-seat"></div>
+					<div class="available-seat"></div>
+					<div class="available-seat"></div>
+					<div class="available-seat"></div>
+					<div class="available-seat"></div>
+					<div class="available-seat"></div>
+					<div class="available-seat"></div>
+					<div class="available-seat"></div>
+					<div class="available-seat"></div>
+					<div class="available-seat"></div>
+					<div class="available-seat"></div>
+					<div class="available-seat"></div>
+					<div class="available-seat"></div>
+					<div class="available-seat"></div>
+					<div class="available-seat"></div>
+					<div class="available-seat"></div>
+					<div class="available-seat"></div>
+					<div class="available-seat"></div>
+					<div class="available-seat"></div>
+					<div class="available-seat"></div>
+					<div class="available-seat"></div>
+					<div class="available-seat"></div>
+					<div class="available-seat"></div>
+					<div class="available-seat"></div>
+				</div>
+			</div>
+			<div class="price-reset-container">
+				<div>
+					You have selected <span>0</span> seats for a price of
+					<span>0 EUR</span>.
+				</div>
+				<button class="reset">Reset</button>
+			</div>
+		</div>
+	</body>
+</html>
