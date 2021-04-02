@@ -1,8 +1,5 @@
 import { movieList, seatDetails } from "./db.js";
 
-console.log(movieList);
-console.log(seatDetails);
-
 const movieSelected = document.querySelector("#movie");
 const seatsContainer = document.querySelector(".cinema-container .seats");
 const resetBtn = document.querySelector(".reset");
